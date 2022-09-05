@@ -53,3 +53,37 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Production
+```bash
+# firewall
+$ sudo ufw allow 1337/tcp
+$ sudo ufw reload
+
+# start
+$ PORT=1337 pm2 start dist/main.js --update-env --name="pro"
+
+# stop
+$ pm2 stop dist/main.js --name="pro"
+
+# logs
+$ pm2 logs pro
+
+# delete
+$ pm2 delete pro
+
+# list
+$ pm2 status
+
+# Generate Startup Script
+$ pm2 startup
+
+# Freeze your process list across server restart
+$ pm2 save
+
+# Remove Startup Script
+$ pm2 unstartup
+
+# after code change
+$ pm2 reload all
+```
