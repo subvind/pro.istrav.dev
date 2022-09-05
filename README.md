@@ -61,6 +61,8 @@ $ sudo ufw allow 1337/tcp
 $ sudo ufw reload
 
 # start
+$ npm i
+$ npm run build
 $ PORT=1337 pm2 start dist/main.js --update-env --name="pro"
 
 # stop
