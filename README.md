@@ -22,8 +22,8 @@ backend tech:
 - socket.io server for live GPS tracking
 - CouchDB server for rxdb.info/replication-couchdb.html
 
-## Framework
-[Nest TypeScript](https://github.com/nestjs/nest).
+## TypeScript Framework
+NestJS: https://github.com/nestjs/nest
 
 ## Installation
 ```bash
